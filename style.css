@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* changes the 1REM from 16px to 10px */
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background: linear-gradient(to right, #d4d3dd, #efefbb);
+}
+
+h1 {
+	margin: 5rem 0 3rem;
+	letter-spacing: 3px;
+	font-size: 4rem;
+}
+
+h3 {
+	text-transform: capitalize;
+}
+
+.pokemon-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	max-width: 1200px;
+	gap: 5rem;
+}
+
+.poke-ball {
+	background: #eee;
+	border-radius: 11px;
+	padding: 1rem 2rem;
+	box-shadow: 0 0 12px rgba(150, 150, 150, 0.9);
+	transition: transform 0.4s ease;
+}
+
+.poke-ball:hover {
+	transform: scale(1.1);
+}
+
+.poke-ball .poke-img {
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.poke-ball .poke-img img {
+	width: 90%;
+	margin-top: 1rem;
+}
+
+.poke-ball .poke-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1.8rem;
+}
+
+.poke-info .number {
+	margin-top: 2rem;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 3px 6px;
+	border-radius: 10px;
+}
